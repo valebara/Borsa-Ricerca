@@ -16,7 +16,7 @@ Directories:\
 • Generic tests &rarr; Various tests for receptive fields, choice of features or parameters\
 • MNIST Numpy (**MISSING HERE**) &rarr; .npy files (images and labels for both training and test set)\
 • Receptive Fields &rarr; Characterization of visual processes in silico\
-• Simulations &rarr Complete simultations for different set-ups with results (accuracy on MNIST database);
+• Simulations &rarr; Complete simultations for different set-ups with results (accuracy on MNIST database)
 
 ## Where to find other files
 
