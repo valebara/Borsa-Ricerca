@@ -6,7 +6,7 @@ Main Unity:
   - PsiMethod.UpdatePrior()
 - PsiMethod.SaveResults()
 
-th &rarr; threshold
+th &rarr; threshold /
 b &rarr; slope
 
 Libraries used; numpy, matplotlib, csv
