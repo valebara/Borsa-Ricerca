@@ -9,3 +9,4 @@ Files:
 - Test.ipynb &rarr; Performance testing script, for the two below
 - Training.ipynb &rarr; Network that saves the firing rate for each digit of the training set in the MNIST database
 - Training_STDP.ipynb &rarr; Learning with synaptic plasticity (STDP), not using firing rate as synaptic weight after training
+- STDP_W.ipynb &rarr; Graphical response of the last layer (complex cells V1) to input from MNIST databse with STDP learning
