@@ -6,6 +6,8 @@
   - PsiMethod.UpdatePrior()
 - PsiMethod.SaveResults()
 
+th &rarr; threshold \ b &rarr; slope
+
 Libraries used: numpy, matplotlib, csv
 
 # InitData()
