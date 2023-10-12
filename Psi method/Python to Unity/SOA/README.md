@@ -25,7 +25,7 @@ Libraries used: numpy, matplotlib, csv
   - param_space -> All param values: PSS,TBW (dim[nVal,2])
 
 # GetCurrentTrial()
-  GetCurrentTrial(lookup_table, prior, nSOA, nVal):\
+  **GetCurrentTrial**(lookup_table, prior, nSOA, nVal):\
   return SOA_next, p_success
 
   Input:
@@ -39,7 +39,7 @@ Libraries used: numpy, matplotlib, csv
   - p_success &rarr; proability of correctly seeing stimulus (for each SOA)
 
 # UpdatePrior()
-  UpdatePrior(lookup_table, prior, p_success, response, SOA_next):\
+  **UpdatePrior**(lookup_table, prior, p_success, response, SOA_next):\
   return prior_updated
 
   Input:
