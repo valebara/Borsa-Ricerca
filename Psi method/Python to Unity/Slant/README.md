@@ -12,37 +12,37 @@ b &rarr; slope
 Libraries used: numpy, matplotlib, csv
 
 # InitData()
-  **InitData**(SOA_min, SOA_max, PSS_min, PSS_max, TBW _min, TBW _max, nVal, nSOA):\
-  return lookup_table, prior, SOA_space, param_space
+  **InitData**(slant_min, slant_max, th_min, th_max, b _min, b_max, nVal, nSlant):\
+  return lookup_table, prior, slant_space, param_space
 
   Input:
-  - nSOA &rarr; Number of SOA values in SOA_space (sampling)
-  - nVal &rarr; Number of values of both PSS and TBW (same for sake of commodity)
-  - param_space[0] = linspace(PSS_min, PSS_max, nVal) &rarr; PSS candidate values
-  - param_space[1] = linspace(PSS_min, PSS _max, nVal) &rarr; TBW candidate values
+  - nSlant &rarr; Number of Slant values in slant_space (sampling)
+  - nVal &rarr; Number of values of both th and b (same for sake of commodity)
+  - param_space[0] = linspace(th_min, th_max, nVal) &rarr; th candidate values
+  - param_space[1] = linspace(b_min, b_max, nVal) &rarr; b candidate values
 
   Output:
-  - lookup_table &rarr; probabiity tables: success probability for each SOA, PSS and TBW (dim[nSOA,nVal^2])
-  - prior &rarr; prior for first trial (uniform for all PSS and TBW)
-  - SOA_space = linspace(SOA_min, SOA_max, nSOA) &rarr; All possible SOA values
-  - param_space -> All param values: PSS,TBW (dim[nVal,2])
+  - lookup_table &rarr; probabiity tables: success probability for each slant, th and b (dim[nSlant,nVal^2])
+  - prior &rarr; prior for first trial (uniform for all th and b)
+  - slant_space = linspace(slant_min, slant_max, nSlant) &rarr; All possible slant values
+  - param_space -> All param values: th,b (dim[nVal,2])
 
 # GetCurrentTrial()
-  **GetCurrentTrial**(lookup_table, prior, nSOA, nVal):\
-  return SOA_next, p_success
+  **GetCurrentTrial**(lookup_table, prior, nSlant, nVal):\
+  return slant_next, p_success
 
   Input:
   - lookup_table &rarr; from InitData() (doesn't change trial by trial)
-  - nSOA &rarr; from InitData() (doesn't change trial by trial)
+  - nSlant &rarr; from InitData() (doesn't change trial by trial)
   - nVal &rarr; from InitData() (doesn't change trial by trial)
   - prior &rarr; from InitData() on first trial, from UpdatePrior() on next
 
   Output:
-  - SOA_next &rarr; 0-based array index of next stimulus (SOA_space[SOA_next])
-  - p_success &rarr; proability of correctly seeing stimulus (for each SOA)
+  - slant_next &rarr; 0-based array index of next stimulus (slant_space[slant_next])
+  - p_success &rarr; proability of correctly seeing stimulus (for each slant)
 
 # UpdatePrior()
-  **UpdatePrior**(lookup_table, prior, p_success, response, SOA_next):\
+  **UpdatePrior**(lookup_table, prior, p_success, response, slant_next):\
   return prior_updated
 
   Input:
@@ -64,6 +64,6 @@ Libraries used: numpy, matplotlib, csv
   - param_space &rarr; from InitData() (doesn't change trial by trial)
 
   Output:
-  - ParamEstim.csv (PSS and TBS inferred)
-  - ParamValues.csv (all values of PSS and TBW)
-  - ParamProbs.csv (marginal probabilities of each PSS and TBW
+  - ParamEstim.csv (th and b inferred)
+  - ParamValues.csv (all values of th and b)
+  - ParamProbs.csv (marginal probabilities of each th and b)
