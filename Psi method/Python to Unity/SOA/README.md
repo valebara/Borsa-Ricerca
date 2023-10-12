@@ -8,7 +8,8 @@
 
 Libraries used: numpy, matplotlib, csv
 
-# **InitData**(SOA_min, SOA_max, PSS_min, PSS_max, TBW _min, TBW _max, nVal, nSOA):\
+# InitData()
+  **InitData**(SOA_min, SOA_max, PSS_min, PSS_max, TBW _min, TBW _max, nVal, nSOA):\
   return lookup_table, prior, SOA_space, param_space
 
   Input:
@@ -23,7 +24,8 @@ Libraries used: numpy, matplotlib, csv
   - SOA_space = linspace(SOA_min, SOA_max, nSOA) &rarr; All possible SOA values
   - param_space -> All param values: PSS,TBW (dim[nVal,2])
 
-# **GetCurrentTrial**(lookup_table, prior, nSOA, nVal):\
+# GetCurrentTrial()
+  GetCurrentTrial(lookup_table, prior, nSOA, nVal):\
   return SOA_next, p_success
 
   Input:
@@ -36,7 +38,8 @@ Libraries used: numpy, matplotlib, csv
   - SOA_next &rarr; 0-based array index of next stimulus (SOA_space[SOA_next])
   - p_success &rarr; proability of correctly seeing stimulus (for each SOA)
 
-# **UpdatePrior**(lookup_table, prior, p_success, response, SOA_next):\
+# UpdatePrior()
+  UpdatePrior(lookup_table, prior, p_success, response, SOA_next):\
   return prior_updated
 
   Input:
@@ -49,7 +52,8 @@ Libraries used: numpy, matplotlib, csv
   Output:
   - prior_updated &rarr; to send to next call of GetCurrentTrial()
 
-**SaveResults**(nVal, prior,param_space):
+# SaveResults()
+  **SaveResults**(nVal, prior,param_space):
 
   Input:
   - nVal &rarr; from InitData() (doesn't change trial by trial)
