@@ -1,8 +1,14 @@
 # Borsa-Ricerca
 
+## Psi method
+
 A
 
-# Where to find other files
+## SNN
+
+A
+
+## Where to find other files
 
 Here 6 files are missing beacuse too big (>25MB). You can find all files at https://drive.google.com/drive/folders/18xOddXIi3DJBTDbPfXYxUiVJGsryj7EY?usp=sharing
 
