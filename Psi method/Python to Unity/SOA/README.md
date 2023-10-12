@@ -5,3 +5,6 @@ Main Unity:
   - Show stimulus and collect response
   - PsiMethod.UpdatePrior()
 - PsiMethod.SaveResults()
+
+Th &rarr; threshold
+b &rarr; slope
