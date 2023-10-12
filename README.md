@@ -2,11 +2,21 @@
 
 ## Psi method
 
-A
+Code for psychopysical tasks, with particular attention to Psi method and its application with the qCSF
+
+Directories:
+• Jupyter notebook &rarr Examples for the application of Psi method and bayesian update of parameters
+• Psychopy &rarr Compared to Matlab Psychtoolbox, not only it's open source, but it's easier to install and more user friendly: one can use both Coder and Builder, the tutorials are much more useful and the help is way more clear.
+• Psychtoolbox &rarr Not only tests, but also scripts for stimuli creation (bandpass filtered letters)
+• Python to Unity &rarr Dialogue files with Unity for the application of Psi method for different tasks (Slant, SOA)
 
 ## SNN
 
-A
+Directories:
+• Generic tests &rarr
+• MNIST Numpy <span style="color:red">some *MISSING HERE* text</span>. &rarr 
+• Receptive Fields &rarr
+• Siulations &rarr
 
 ## Where to find other files
 
