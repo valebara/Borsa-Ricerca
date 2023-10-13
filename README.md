@@ -24,7 +24,7 @@ Only bigger files, missing on GitHub, at https://drive.google.com/drive/folders/
 
 -	letters.npy goes in ‘Psi Method\Psychopy\’ 
 -	contrast2.mat goes in ‘Psi Method\Pscyhtoolbox\’
--	MNIST Numpy [dir] goes in ‘SNN\’
--	MFR (digit) [dir] goes in ‘SNN\Simulations\Results\Data Complex 3x3\’
--	MFR simulations (random) [dir] goes in ‘SNN\Simulations\Results\Data Complex 3x3\’
--	w stdp [dir] goes in ‘SNN\Simulations\Results\Data Complex 3x3\’
+-	MNIST Numpy (directory) goes in ‘SNN\’
+-	MFR (digit) (directory) goes in ‘SNN\Simulations\Results\Data Complex 3x3\’
+-	MFR simulations (random) (directory) goes in ‘SNN\Simulations\Results\Data Complex 3x3\’
+-	w stdp (directory) goes in ‘SNN\Simulations\Results\Data Complex 3x3\’
