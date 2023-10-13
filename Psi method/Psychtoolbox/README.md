@@ -3,7 +3,7 @@
 Files:
 
 - Letters (directory) &rarr; Various files for creation of filtered letters
-- contrast2.mat &rarr; Filtered letter in .mat file, created with scripts inside directory ABOVE
+- contrast2.mat (**MISSING HERE**) &rarr; Filtered letter in .mat file, created with scripts inside directory ABOVE
 - CSF.m &rarr; truncated log-parabola to model CSF of an observer, with 4 parameters (max frequency, max sensitivity, full width at half maximum and truncation level in log units)
 - discretesample.m &rarr; from https://it.mathworks.com/matlabcentral/fileexchange/21912-sampling-from-a-discrete-distribution
 - entropy.m &rarr; Example of the entripy of a binary event
