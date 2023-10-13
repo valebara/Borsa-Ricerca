@@ -1,5 +1,3 @@
-# Borsa-Ricerca
-
 ## Psi method
 
 Code for psychopysical tasks, with particular attention to Psi method and its application with the qCSF\
